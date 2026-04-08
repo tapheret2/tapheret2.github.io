@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phat Pham | Data Engineering Intern Portfolio</title>
+    <meta
+      name="description"
+      content="Phạm Tiến Phát (Phat Pham) portfolio for Data Engineering Intern roles: ETL pipelines, SQL analytics, machine learning, and system projects."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar">
+      <a class="logo" href="#home">Phạm Tiến Phát</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home" class="layout">
+      <aside class="profile card reveal">
+        <div class="photo-wrap">
+          <img src="./avatar-placeholder.svg" alt="Phat Pham portrait" class="photo" />
+        </div>
+        <p class="status">Open to Data Engineering Internships</p>
+        <h1>Phat Pham</h1>
+        <p class="native">Phạm Tiến Phát</p>
+        <p class="role">Aspiring Data Engineer · Ho Chi Minh City, Vietnam</p>
+        <p class="summary">
+          Student passionate about building scalable data pipelines and analytics systems that turn
+          raw events into reliable business insights.
+        </p>
+
+        <div class="links">
+          <a href="https://github.com/tapheret2" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.kaggle.com/taphere" target="_blank" rel="noreferrer">Kaggle</a>
+          <a href="https://www.linkedin.com/in/phamtienphat/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </div>
+      </aside>
+
+      <section class="content">
+        <section id="about" class="card reveal">
+          <h2>About Me</h2>
+          <p>
+            I’m currently pursuing my studies while building practical data projects end-to-end:
+            ingestion, transformation, validation, and analysis. I enjoy combining software
+            engineering discipline with analytical thinking.
+          </p>
+          <p>
+            My goal is to contribute as a <strong>Data Engineering Intern</strong>, grow under a
+            strong team, and help design robust data foundations for product and business decisions.
+          </p>
+        </section>
+
+        <section id="skills" class="card reveal">
+          <h2>Technical Skills</h2>
+          <div class="skills-grid">
+            <div>
+              <h3>Languages</h3>
+              <ul><li>Python</li><li>SQL</li><li>JavaScript/TypeScript</li></ul>
+            </div>
+            <div>
+              <h3>Data Tools</h3>
+              <ul><li>Pandas</li><li>Jupyter</li><li>ETL / Data Pipeline</li></ul>
+            </div>
+            <div>
+              <h3>ML / Engineering</h3>
+              <ul><li>Scikit-learn</li><li>Predictive Modeling</li><li>System Design</li></ul>
+            </div>
+            <div>
+              <h3>Others</h3>
+              <ul><li>Kaggle</li><li>Git/GitHub</li><li>Blockchain Smart Contract</li></ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card reveal">
+          <div class="title-row">
+            <h2>Featured Projects</h2>
+            <span>Recruiter quick scan</span>
+          </div>
+          <div class="project-grid">
+            <article>
+              <h3>Event Analytics Pipeline</h3>
+              <p>Data pipeline for processing and analyzing event data to support product decisions.</p>
+              <p class="meta">Python · Pandas · ETL · SQL</p>
+              <a href="https://github.com/tapheret2/event-analytics-pipeline" target="_blank" rel="noreferrer">View Repository →</a>
+            </article>
+            <article>
+              <h3>Gold Price Forecast</h3>
+              <p>ML project to predict gold prices with feature engineering and robust evaluation.</p>
+              <p class="meta">Python · Scikit-learn · Jupyter</p>
+              <a href="https://github.com/tapheret2/Gold-Price-Forecast" target="_blank" rel="noreferrer">View Repository →</a>
+            </article>
+            <article>
+              <h3>SME Management System</h3>
+              <p>Python system for SME operations with focus on maintainability and practical workflows.</p>
+              <p class="meta">Python · Backend · System Building</p>
+              <a href="https://github.com/tapheret2/SME-Management-System" target="_blank" rel="noreferrer">View Repository →</a>
+            </article>
+            <article>
+              <h3>The Kickstarter DApp Contract</h3>
+              <p>Smart contract project showing backend logic and blockchain fundamentals.</p>
+              <p class="meta">Blockchain · Smart Contract · Web3</p>
+              <a href="https://github.com/tapheret2/The-Kickstarter-Dapp-Contract" target="_blank" rel="noreferrer">View Repository →</a>
+            </article>
+          </div>
+        </section>
+
+        <section id="experience" class="card reveal">
+          <h2>Experience & Education</h2>
+          <div class="timeline">
+            <div>
+              <h3>Currently pursuing university studies</h3>
+              <p>Ho Chi Minh City, Vietnam</p>
+              <p>Focused on data engineering foundations, practical project building, and internship readiness.</p>
+            </div>
+            <div>
+              <h3>Project-based Engineering Practice</h3>
+              <p>Personal & Academic Projects</p>
+              <p>Designed ETL-style workflows, analytics pipelines, forecasting models, and backend systems.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="card reveal">
+          <h2>Contact</h2>
+          <p><strong>Available for internship opportunities.</strong></p>
+          <p>Email/DM via LinkedIn preferred. I’m open to Data Engineering Intern and Junior Data Engineer roles.</p>
+          <a class="contact-cta" href="https://www.linkedin.com/in/phamtienphat/" target="_blank" rel="noreferrer">Let’s connect on LinkedIn</a>
+        </section>
+      </section>
+          <p class="hint">Tip: replace <code>avatar-placeholder.svg</code> with your real photo file (same name) for live profile branding.</p>
+    </main>
+
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) entry.target.classList.add('visible');
+        });
+      }, { threshold: 0.12 });
+
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
