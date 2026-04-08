@@ -115,4 +115,5 @@ Then:
 
 - `CNAME` keeps the custom domain mapped to `tienphat.me`.
 - GitHub Pages deploys the generated `out/` folder through `.github/workflows/deploy-pages.yml`.
-- `src/output.css` is generated during local development and is intentionally not committed.
+- `src/output.css` is generated so the site still works if GitHub Pages is temporarily serving the repository root.
+- If `https://tienphat.me` shows the README instead of the portfolio, go to `Settings > Pages > Build and deployment > Source` and switch it to `GitHub Actions`.

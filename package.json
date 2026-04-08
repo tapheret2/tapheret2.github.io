@@ -7,8 +7,9 @@
     "dev:serve": "live-server src --host=127.0.0.1 --port=3000 --open=/index.html",
     "dev": "concurrently \"npm:dev:css\" \"npm:dev:serve\"",
     "build:site": "node ./scripts/build.mjs",
+    "build:css:src": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify",
     "build:css": "npx @tailwindcss/cli -i ./src/input.css -o ./out/output.css --minify",
-    "build": "npm run build:site && npm run build:css",
+    "build": "npm run build:css:src && npm run build:site && npm run build:css",
     "preview": "npm run build && live-server out --host=127.0.0.1 --port=4173 --open=/index.html"
   },
   "devDependencies": {
