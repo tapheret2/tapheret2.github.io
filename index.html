@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phat Pham | Data Engineering Portfolio</title>
+    <meta
+      name="description"
+      content="Phạm Tiến Phát (Phat Pham) - Data Engineering Intern portfolio featuring ETL pipelines, ML projects, and system-building experience."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="nav">
+      <a class="brand" href="#home">Phạm Tiến Phát</a>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="home" class="container">
+      <section class="hero reveal">
+        <p class="pill">Open to Data Engineering Internships</p>
+        <h1>Building reliable data pipelines and analytics systems.</h1>
+        <p class="subtitle">
+          I’m <strong>Phat Pham (Phạm Tiến Phát)</strong>, a student in Ho Chi Minh City, Vietnam,
+          focused on ETL workflows, scalable backend systems, and data-driven decisions.
+        </p>
+        <div class="cta-group">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="https://www.linkedin.com/in/phamtienphat/" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a class="btn" href="https://github.com/tapheret2" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="btn" href="https://www.kaggle.com/taphere" target="_blank" rel="noreferrer">Kaggle</a>
+        </div>
+      </section>
+
+      <section id="about" class="panel reveal">
+        <h2>About Me</h2>
+        <p>
+          I’m currently pursuing my studies while building practical data engineering projects. I
+          enjoy turning raw events into clean datasets, building useful metrics, and supporting
+          product decisions with trustworthy data.
+        </p>
+        <p>
+          My projects combine <strong>Python, SQL, ETL, and machine learning</strong> with a strong
+          engineering mindset: write maintainable code, validate data quality, and design systems
+          that can scale.
+        </p>
+      </section>
+
+      <section id="projects" class="reveal">
+        <div class="section-head">
+          <h2>Featured Projects</h2>
+          <p>Selected work aligned with Data Engineering internship roles.</p>
+        </div>
+
+        <div class="grid">
+          <article class="card">
+            <h3>Event Analytics Pipeline</h3>
+            <p>Data pipeline for ingestion, transformation, and event-driven behavior analysis.</p>
+            <p class="stack">Python · Pandas · ETL · SQL</p>
+            <p class="learned"><strong>Learned:</strong> Data quality checks, schema design, scalable ETL thinking.</p>
+            <a href="https://github.com/tapheret2/event-analytics-pipeline" target="_blank" rel="noreferrer">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3>Gold Price Forecast</h3>
+            <p>ML project to predict gold prices with feature engineering and model evaluation.</p>
+            <p class="stack">Python · Scikit-learn · Jupyter</p>
+            <p class="learned"><strong>Learned:</strong> Time-aware validation, model comparison, practical forecasting workflow.</p>
+            <a href="https://github.com/tapheret2/Gold-Price-Forecast" target="_blank" rel="noreferrer">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3>SME Management System</h3>
+            <p>Python-based management system supporting SME operational workflows.</p>
+            <p class="stack">Python · Backend · System Building</p>
+            <p class="learned"><strong>Learned:</strong> Modular backend design and maintainability for real business cases.</p>
+            <a href="https://github.com/tapheret2/SME-Management-System" target="_blank" rel="noreferrer">View on GitHub →</a>
+          </article>
+
+          <article class="card">
+            <h3>The Kickstarter DApp Contract</h3>
+            <p>Decentralized crowdfunding contract showing backend and blockchain foundations.</p>
+            <p class="stack">Smart Contract · Blockchain · Web3</p>
+            <p class="learned"><strong>Learned:</strong> Transaction flow, contract architecture, trustless system design.</p>
+            <a href="https://github.com/tapheret2/The-Kickstarter-Dapp-Contract" target="_blank" rel="noreferrer">View on GitHub →</a>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="panel reveal">
+        <h2>Contact</h2>
+        <p>Available for Data Engineering Internship opportunities.</p>
+        <p>Location: Ho Chi Minh City, Vietnam</p>
+        <p>
+          Reach out via
+          <a href="https://www.linkedin.com/in/phamtienphat/" target="_blank" rel="noreferrer">LinkedIn</a>
+          or view my work on
+          <a href="https://github.com/tapheret2" target="_blank" rel="noreferrer">GitHub</a>.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) entry.target.classList.add('visible');
+          });
+        },
+        { threshold: 0.14 }
+      );
+      document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+  </body>
+</html>
