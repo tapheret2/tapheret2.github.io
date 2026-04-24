@@ -29,15 +29,34 @@ export const metadata: Metadata = {
     "Vietnam",
     "Intern",
     "Phạm Tiến Phát",
+    "tienphat",
+    "tienphat.me",
+    "Pham Tien Phat",
   ],
   authors: [{ name: "Phạm Tiến Phát" }],
+  icons: {
+    icon: [
+      { url: "/icon-32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/icon-192.png",
+  },
   openGraph: {
     title: "Phạm Tiến Phát — Data Engineer Portfolio",
     description:
       "Building scalable data systems. Open to Data Engineering Internships.",
     url: "https://tienphat.me",
     type: "website",
-    siteName: "Phạm Tiến Phát Portfolio",
+    siteName: "tienphat.me",
+  },
+  twitter: {
+    card: "summary",
+    title: "Phạm Tiến Phát — Data Engineer Portfolio",
+    description:
+      "Data Engineering student building scalable pipelines, ETL systems, and ML models.",
+  },
+  alternates: {
+    canonical: "https://tienphat.me",
   },
   metadataBase: new URL("https://tienphat.me"),
 };
