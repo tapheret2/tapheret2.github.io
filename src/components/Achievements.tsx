@@ -2,8 +2,9 @@
 
 import { motion, Variants, useInView } from "framer-motion";
 import { useRef, useCallback } from "react";
-import { Trophy, ExternalLink } from "lucide-react";
+import { Trophy, ExternalLink, Medal, Star, FlaskConical } from "lucide-react";
 import { GitHubIcon } from "./Icons";
+import { type ReactNode } from "react";
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -17,7 +18,7 @@ const fadeUp: Variants = {
 const achievements = [
   {
     platform: "Kaggle",
-    icon: "🏅",
+    icon: <Medal size={22} /> as ReactNode,
     accent: "#fb923c",
     title: "Active Kaggle Competitor",
     description:
@@ -31,7 +32,7 @@ const achievements = [
   },
   {
     platform: "GitHub",
-    icon: "⭐",
+    icon: <Star size={22} /> as ReactNode,
     accent: "#06b6d4",
     title: "Consistent Open Source Builder",
     description:
@@ -45,7 +46,7 @@ const achievements = [
   },
   {
     platform: "Projects",
-    icon: "🔬",
+    icon: <FlaskConical size={22} /> as ReactNode,
     accent: "#8b5cf6",
     title: "Self-Directed Learning",
     description:
@@ -144,10 +145,11 @@ function ShineCard({
         {/* Icon + platform */}
         <div className="flex items-center justify-between mb-4">
           <div
-            className="w-12 h-12 rounded-xl flex items-center justify-center text-xl"
+            className="w-12 h-12 rounded-xl flex items-center justify-center"
             style={{
               background: `${ach.accent}10`,
               border: `1px solid ${ach.accent}20`,
+              color: ach.accent,
             }}
           >
             {ach.icon}

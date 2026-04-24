@@ -152,7 +152,7 @@ export default function About() {
               <div className="absolute top-0 right-0 w-32 h-32 bg-[#06b6d4]/[0.06] rounded-full blur-[40px] -translate-y-1/2 translate-x-1/2" />
 
               <div className="flex items-start gap-4 relative">
-                <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-[#06b6d4] to-[#8b5cf6] flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/15">
+                <div className="w-10 h-10 rounded-xl bg-[#06b6d4] flex items-center justify-center flex-shrink-0 shadow-lg shadow-cyan-500/15">
                   <Target size={17} className="text-white" />
                 </div>
                 <div>

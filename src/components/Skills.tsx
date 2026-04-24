@@ -55,7 +55,7 @@ function AnimatedBar({ level, delay }: { level: number; delay: number }) {
           transition={{ duration: 0.4, delay: delay + i * 0.05 }}
           className={`flex-1 rounded-full origin-left ${
             i < level
-              ? "bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6]"
+              ? "bg-[#06b6d4]"
               : "bg-white/[0.06]"
           }`}
         />
