@@ -70,7 +70,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${spaceGrotesk.variable}`}>
       <head>
         <meta name="theme-color" content="#030712" />
-        <meta name="google-site-verification" content="ch1C3hNLAt-TdDnqPC9LA2gbiNcZZZyHd" />
+        <meta name="google-site-verification" content="ch1C3hNLAt-TdDnqPC9LA2gbiNcZZZyHdX4eMpeXTYg" />
       </head>
       <body className="antialiased">{children}</body>
     </html>
