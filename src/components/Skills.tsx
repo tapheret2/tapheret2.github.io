@@ -3,6 +3,36 @@
 import { motion, Variants, useInView } from "framer-motion";
 import { useRef } from "react";
 import { skillCategories, techTags } from "@/lib/data";
+import {
+  Code, Zap, Brain, Wrench,
+  Database, FileCode, Blocks,
+  Table, Workflow, Layers, HardDrive,
+  Cpu, Rocket, FlaskConical, TrendingUp,
+  NotebookPen, GitBranch, Target, Link,
+} from "lucide-react";
+
+const iconMap: Record<string, React.ReactNode> = {
+  code: <Code size={16} />,
+  zap: <Zap size={16} />,
+  brain: <Brain size={16} />,
+  wrench: <Wrench size={16} />,
+  python: <Code size={14} />,
+  database: <Database size={14} />,
+  "file-code": <FileCode size={14} />,
+  blocks: <Blocks size={14} />,
+  table: <Table size={14} />,
+  workflow: <Workflow size={14} />,
+  layers: <Layers size={14} />,
+  "hard-drive": <HardDrive size={14} />,
+  cpu: <Cpu size={14} />,
+  rocket: <Rocket size={14} />,
+  "flask-conical": <FlaskConical size={14} />,
+  "trending-up": <TrendingUp size={14} />,
+  "notebook-pen": <NotebookPen size={14} />,
+  "git-branch": <GitBranch size={14} />,
+  target: <Target size={14} />,
+  link: <Link size={14} />,
+};
 
 const fadeUp: Variants = {
   hidden: { opacity: 0, y: 30 },
@@ -80,7 +110,7 @@ export default function Skills() {
             >
               {/* Category header */}
               <div className="flex items-center gap-3 mb-5">
-                <span className="text-xl">{cat.icon}</span>
+                <span className="text-[#06b6d4]">{iconMap[cat.icon] || cat.icon}</span>
                 <h3 className="text-white font-semibold text-sm tracking-wide font-display">{cat.category}</h3>
               </div>
 
@@ -90,7 +120,7 @@ export default function Skills() {
                   <div key={skill.name}>
                     <div className="flex items-center justify-between mb-2">
                       <div className="flex items-center gap-2.5">
-                        <span className="text-base">{skill.icon}</span>
+                        <span className="text-[#64748b]">{iconMap[skill.icon] || skill.icon}</span>
                         <span className="text-[#cbd5e1] text-sm font-medium">{skill.name}</span>
                       </div>
                       <span className="text-[#475569] text-[11px] uppercase tracking-wider">

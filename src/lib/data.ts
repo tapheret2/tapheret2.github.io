@@ -57,7 +57,7 @@ export const projects: Project[] = [
     whatILearned:
       "How to architect a production-grade streaming pipeline from ingestion to visualization, handle backpressure with batch consumers, and design time-series storage with proper retention policies and continuous aggregates.",
     accentColor: "#ef4444",
-    icon: "🔴",
+    icon: "radio",
   },
   {
     id: "event-analytics-pipeline",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     whatILearned:
       "How to treat data quality, schema evolution, and pipeline reliability as core engineering problems instead of cleanup work.",
     accentColor: "#06b6d4",
-    icon: "🔄",
+    icon: "workflow",
   },
   {
     id: "gold-price-forecast",
@@ -95,7 +95,7 @@ export const projects: Project[] = [
     whatILearned:
       "How important clean feature pipelines, validation discipline, and experiment tracking are when turning raw historical data into dependable model outputs.",
     accentColor: "#f59e0b",
-    icon: "📈",
+    icon: "trending-up",
   },
   {
     id: "sme-management-system",
@@ -114,7 +114,7 @@ export const projects: Project[] = [
     whatILearned:
       "How better data modelling improves the reliability of reporting features and makes business systems easier to extend over time.",
     accentColor: "#10b981",
-    icon: "🏢",
+    icon: "building",
   },
   {
     id: "kickstarter-dapp",
@@ -133,7 +133,7 @@ export const projects: Project[] = [
     whatILearned:
       "How to think carefully about state, validation, and failure paths in systems where data integrity cannot rely on a traditional backend.",
     accentColor: "#8b5cf6",
-    icon: "⛓️",
+    icon: "link",
   },
   {
     id: "kaggle-projects",
@@ -152,49 +152,49 @@ export const projects: Project[] = [
     whatILearned:
       "How to test ideas quickly, compare experiments honestly, and improve model quality without losing sight of reproducibility.",
     accentColor: "#fb923c",
-    icon: "🏆",
+    icon: "trophy",
   },
 ];
 
 export const skillCategories: SkillCategory[] = [
   {
     category: "Languages & Core",
-    icon: "💻",
+    icon: "code",
     skills: [
-      { name: "Python", icon: "🐍", level: 5 },
-      { name: "SQL", icon: "🗄️", level: 4 },
-      { name: "TypeScript", icon: "📘", level: 3 },
-      { name: "Solidity", icon: "🔷", level: 3 },
+      { name: "Python", icon: "python", level: 4 },
+      { name: "SQL", icon: "database", level: 3 },
+      { name: "TypeScript", icon: "file-code", level: 2 },
+      { name: "Solidity", icon: "blocks", level: 2 },
     ],
   },
   {
     category: "Data & ETL",
-    icon: "⚡",
+    icon: "zap",
     skills: [
-      { name: "Pandas", icon: "🐼", level: 5 },
-      { name: "ETL Pipelines", icon: "🔄", level: 4 },
-      { name: "Data Modelling", icon: "🗂️", level: 4 },
-      { name: "SQLite / SQL DBs", icon: "💾", level: 4 },
+      { name: "Pandas", icon: "table", level: 4 },
+      { name: "ETL Pipelines", icon: "workflow", level: 3 },
+      { name: "Data Modelling", icon: "layers", level: 3 },
+      { name: "SQLite / SQL DBs", icon: "hard-drive", level: 3 },
     ],
   },
   {
     category: "ML & Analytics",
-    icon: "🤖",
+    icon: "brain",
     skills: [
-      { name: "Scikit-learn", icon: "🧠", level: 4 },
-      { name: "LightGBM / XGBoost", icon: "🚀", level: 4 },
-      { name: "Feature Engineering", icon: "🔬", level: 4 },
-      { name: "Time-Series Analysis", icon: "📈", level: 3 },
+      { name: "Scikit-learn", icon: "cpu", level: 3 },
+      { name: "LightGBM / XGBoost", icon: "rocket", level: 3 },
+      { name: "Feature Engineering", icon: "flask-conical", level: 3 },
+      { name: "Time-Series Analysis", icon: "trending-up", level: 2 },
     ],
   },
   {
     category: "Tools & Others",
-    icon: "🛠️",
+    icon: "wrench",
     skills: [
-      { name: "Jupyter Notebook", icon: "📓", level: 5 },
-      { name: "Git / GitHub", icon: "🐙", level: 4 },
-      { name: "Optuna", icon: "🎯", level: 3 },
-      { name: "Blockchain / Web3", icon: "⛓️", level: 3 },
+      { name: "Jupyter Notebook", icon: "notebook-pen", level: 4 },
+      { name: "Git / GitHub", icon: "git-branch", level: 3 },
+      { name: "Optuna", icon: "target", level: 2 },
+      { name: "Blockchain / Web3", icon: "link", level: 2 },
     ],
   },
 ];

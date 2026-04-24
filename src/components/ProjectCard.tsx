@@ -2,9 +2,21 @@
 
 import { motion } from "framer-motion";
 import { useRef, useState, useCallback } from "react";
-import { ExternalLink, ChevronDown } from "lucide-react";
+import {
+  ExternalLink, ChevronDown, Radio, Workflow, TrendingUp,
+  Building, Link, Trophy,
+} from "lucide-react";
 import { GitHubIcon } from "./Icons";
 import { Project } from "@/lib/data";
+
+const projectIconMap: Record<string, React.ReactNode> = {
+  radio: <Radio size={18} />,
+  workflow: <Workflow size={18} />,
+  "trending-up": <TrendingUp size={18} />,
+  building: <Building size={18} />,
+  link: <Link size={18} />,
+  trophy: <Trophy size={18} />,
+};
 
 interface ProjectCardProps {
   project: Project;
@@ -61,13 +73,14 @@ export default function ProjectCard({ project, index, inView }: ProjectCardProps
         <div className="flex items-start justify-between mb-4">
           <div className="flex items-center gap-3">
             <div
-              className="w-10 h-10 rounded-xl flex items-center justify-center text-lg flex-shrink-0"
+              className="w-10 h-10 rounded-xl flex items-center justify-center flex-shrink-0"
               style={{
                 background: `${project.accentColor}10`,
                 border: `1px solid ${project.accentColor}20`,
+                color: project.accentColor,
               }}
             >
-              {project.icon}
+              {projectIconMap[project.icon] || project.icon}
             </div>
             <div>
               <span

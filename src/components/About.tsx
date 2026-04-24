@@ -16,13 +16,13 @@ const fadeUp: Variants = {
 const stats = [
   { value: "5+", label: "Projects Built", color: "#06b6d4" },
   { value: "3+", label: "Kaggle Competitions", color: "#8b5cf6" },
-  { value: "ETL", label: "Pipeline Expert", color: "#10b981" },
+  { value: "ETL", label: "Pipeline Design", color: "#10b981" },
   { value: "ML", label: "Model Builder", color: "#f59e0b" },
 ];
 
 const infoChips = [
   { icon: <MapPin size={13} />, text: "Ho Chi Minh City, Vietnam" },
-  { icon: <GraduationCap size={13} />, text: "CS Student" },
+  { icon: <GraduationCap size={13} />, text: "Data Science Student" },
   { icon: <Target size={13} />, text: "Seeking DE Internship" },
   { icon: <Sparkles size={13} />, text: "Kaggle Competitor" },
 ];
@@ -71,7 +71,7 @@ export default function About() {
               animate={inView ? "visible" : "hidden"}
               className="text-[#94a3b8] text-[15px] leading-relaxed mb-4"
             >
-              I&apos;m a Computer Science student at Ho Chi Minh City, Vietnam, with a deep focus on
+              I&apos;m a Data Science student at VNUHCM — University of Science, with a deep focus on
               <span className="text-white font-medium"> Data Engineering</span> and
               <span className="text-white font-medium"> Machine Learning</span>. I love building
               systems that move, transform, and unlock the value of data at scale.
