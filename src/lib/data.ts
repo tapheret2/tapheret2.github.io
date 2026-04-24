@@ -203,8 +203,72 @@ export const socialLinks = {
   github: "https://github.com/tapheret2",
   kaggle: "https://www.kaggle.com/taphere",
   linkedin: "https://www.linkedin.com/in/phamtienphat/",
-  email: "phamtienphat@email.com",
+  email: "phamtienphat2006@gmail.com",
 };
+
+export const personalInfo = {
+  name: "Pham Tien Phat",
+  title: "Aspiring Data Analyst & Web3 Enthusiast",
+  location: "Thu Duc, HCMC, Vietnam",
+  phone: "+84 843 357 465",
+  avatar: "/avatar.jpg",
+  bio: "Second-year Data Science student at VNUHCM University of Science. Passionate about turning raw data into actionable business insights through cleaning, analysis, and reporting. Strong interest in Web3 and real-time data systems.",
+};
+
+export interface Experience {
+  role: string;
+  company: string;
+  type: string;
+  period: string;
+  current: boolean;
+  description: string[];
+}
+
+export const experiences: Experience[] = [
+  {
+    role: "Software Engineer",
+    company: "Peganyx",
+    type: "Intern · Remote",
+    period: "Nov 2025 — Present",
+    current: true,
+    description: [
+      "Collaborated in a remote team to develop web applications and blockchain features",
+      "Built data processing scripts to support performance monitoring and reporting",
+      "Gained hands-on experience in agile workflows, Git, and fast-paced project delivery",
+    ],
+  },
+  {
+    role: "Head of Human Resources",
+    company: "NQD Connection Volunteer Club",
+    type: "Leadership",
+    period: "2022 — 2024",
+    current: false,
+    description: [
+      "Led HR operations and managed recruitment, training, and engagement for 200+ members",
+      "Designed tracking systems to monitor member performance and participation metrics",
+    ],
+  },
+];
+
+export interface Education {
+  degree: string;
+  school: string;
+  period: string;
+  note?: string;
+}
+
+export const education: Education[] = [
+  {
+    degree: "Bachelor of Data Science",
+    school: "VNUHCM — University of Science",
+    period: "2024 — Present",
+  },
+  {
+    degree: "High School Diploma — Mathematics",
+    school: "Nguyen Quang Dieu High School for the Gifted",
+    period: "2021 — 2024",
+  },
+];
 
 export const techTags = [
   "Python", "Pandas", "NumPy", "SQL", "ETL", "LightGBM",

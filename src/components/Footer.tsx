@@ -20,11 +20,11 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Brand */}
           <div className="flex items-center gap-2.5">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-br from-[#06b6d4] to-[#8b5cf6] flex items-center justify-center">
+            <div className="w-7 h-7 rounded-lg bg-[#06b6d4] flex items-center justify-center">
               <Terminal size={12} className="text-white" />
             </div>
             <span className="font-bold text-white font-display text-sm">
-              phat<span className="text-gradient-static">.dev</span>
+              tienphat<span className="text-[#06b6d4]">.me</span>
             </span>
           </div>
 

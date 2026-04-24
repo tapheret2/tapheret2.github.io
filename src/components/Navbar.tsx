@@ -55,11 +55,11 @@ export default function Navbar() {
         <div className="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2.5 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-[#06b6d4] to-[#8b5cf6] flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 group-hover:scale-110 transition-all duration-300">
+            <div className="w-8 h-8 rounded-lg bg-[#06b6d4] flex items-center justify-center shadow-lg shadow-cyan-500/20 group-hover:shadow-cyan-500/40 group-hover:scale-110 transition-all duration-300">
               <Terminal size={14} className="text-white" />
             </div>
             <span className="font-bold text-white font-display tracking-tight text-sm">
-              phat<span className="text-gradient-static">.dev</span>
+              tienphat<span className="text-[#06b6d4]">.me</span>
             </span>
           </a>
 
@@ -87,7 +87,7 @@ export default function Navbar() {
             ))}
             <a
               href="#contact"
-              className="ml-3 px-4 py-2 text-[13px] font-medium rounded-lg bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] text-white hover:opacity-90 transition-all duration-200 shadow-lg shadow-cyan-500/15 hover:shadow-cyan-500/30"
+              className="ml-3 px-4 py-2 text-[13px] font-medium rounded-lg bg-[#06b6d4] text-white hover:bg-[#0891b2] transition-all duration-200 shadow-lg shadow-cyan-500/15 hover:shadow-cyan-500/30"
             >
               Hire Me
             </a>
@@ -132,7 +132,7 @@ export default function Navbar() {
               <a
                 href="#contact"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 px-4 py-3 text-sm font-medium rounded-lg bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] text-white text-center shadow-lg shadow-cyan-500/15"
+                className="mt-2 px-4 py-3 text-sm font-medium rounded-lg bg-[#06b6d4] text-white text-center shadow-lg shadow-cyan-500/15"
               >
                 Hire Me
               </a>

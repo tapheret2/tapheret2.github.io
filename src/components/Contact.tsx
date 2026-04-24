@@ -18,8 +18,8 @@ const fadeUp: Variants = {
 const contactLinks = [
   {
     label: "Email",
-    value: "phamtienphat@email.com",
-    href: "mailto:phamtienphat@email.com",
+    value: "phamtienphat2006@gmail.com",
+    href: "mailto:phamtienphat2006@gmail.com",
     icon: <Send size={17} />,
     accent: "#06b6d4",
     description: "Best way to reach me",

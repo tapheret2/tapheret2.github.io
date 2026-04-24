@@ -3,7 +3,8 @@
 import { motion } from "framer-motion";
 import { ArrowDown, ExternalLink } from "lucide-react";
 import { GitHubIcon, LinkedInIcon } from "./Icons";
-import { socialLinks, techTags } from "@/lib/data";
+import { socialLinks, techTags, personalInfo } from "@/lib/data";
+import Image from "next/image";
 
 export default function Hero() {
   return (
@@ -21,6 +22,25 @@ export default function Hero() {
 
       {/* Content */}
       <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
+        {/* Avatar */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.6, delay: 0.1 }}
+          className="mb-6"
+        >
+          <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border-2 border-[#06b6d4]/30 shadow-lg shadow-cyan-500/10 mx-auto">
+            <Image
+              src={personalInfo.avatar}
+              alt={personalInfo.name}
+              width={112}
+              height={112}
+              className="object-cover w-full h-full"
+              priority
+            />
+          </div>
+        </motion.div>
+
         {/* Terminal line */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -76,7 +96,7 @@ export default function Hero() {
         >
           <a
             href="#projects"
-            className="group px-6 py-3 rounded-xl bg-gradient-to-r from-[#06b6d4] to-[#8b5cf6] text-white font-medium text-sm shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5"
+            className="group px-6 py-3 rounded-xl bg-[#06b6d4] text-white font-medium text-sm shadow-lg shadow-cyan-500/20 hover:bg-[#0891b2] hover:shadow-cyan-500/40 transition-all duration-300 hover:-translate-y-0.5"
           >
             View My Work
             <span className="inline-block ml-1 group-hover:translate-x-1 transition-transform">→</span>
