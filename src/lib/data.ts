@@ -27,6 +27,39 @@ export interface SkillCategory {
 
 export const projects: Project[] = [
   {
+    id: "crypto-stream-pipeline",
+    title: "Crypto Stream Pipeline",
+    description:
+      "Real-time cryptocurrency data pipeline — Binance WebSocket → Redpanda → TimescaleDB → dbt → Grafana, with Telegram alerts.",
+    longDescription:
+      "End-to-end streaming data platform that ingests live trades from Binance WebSocket, routes them through Redpanda (Kafka-compatible), stores in TimescaleDB hypertables with continuous aggregates, transforms via a 3-layer dbt architecture (staging → intermediate → marts), and visualizes on Grafana dashboards with 5-second auto-refresh. Includes smart alerting via Telegram for price swings and volume spikes.",
+    techStack: [
+      "Python",
+      "Redpanda",
+      "TimescaleDB",
+      "dbt",
+      "Grafana",
+      "Docker",
+      "WebSocket",
+      "Telegram Bot",
+      "GitHub Actions",
+    ],
+    category: "pipeline",
+    githubUrl: "https://github.com/tapheret2/crypto-stream-pipeline",
+    highlights: [
+      "Real-time ingestion of BTC, ETH, SOL, BNB trades via Binance WebSocket",
+      "Kafka-compatible streaming with Redpanda, batch writes (200 records / 3s)",
+      "TimescaleDB hypertables with auto continuous aggregates for 1m & 1h OHLCV",
+      "3-layer dbt models: staging, intermediate (candles), marts (volatility, volume)",
+      "Telegram alerts for >3% price change and >3σ volume spikes",
+      "One-command deployment with Docker Compose",
+    ],
+    whatILearned:
+      "How to architect a production-grade streaming pipeline from ingestion to visualization, handle backpressure with batch consumers, and design time-series storage with proper retention policies and continuous aggregates.",
+    accentColor: "#ef4444",
+    icon: "🔴",
+  },
+  {
     id: "event-analytics-pipeline",
     title: "Event Analytics Pipeline",
     description: "Python ETL workflow for ingesting, validating, and structuring event data into analytics-ready tables.",
@@ -177,5 +210,6 @@ export const techTags = [
   "Python", "Pandas", "NumPy", "SQL", "ETL", "LightGBM",
   "XGBoost", "CatBoost", "Optuna", "Scikit-learn", "Jupyter",
   "Git", "Solidity", "SQLite", "Feature Engineering", "Matplotlib",
-  "Docker", "Next.js", "TypeScript", "React",
+  "Docker", "Next.js", "TypeScript", "React", "Redpanda", "Kafka",
+  "TimescaleDB", "dbt", "Grafana", "WebSocket",
 ];
